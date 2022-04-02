@@ -11,7 +11,7 @@ def start_message(message: telebot.types.Message) -> None:
     bot.send_message(chat_id, START)
 
 @bot.message_handler(commands=["help"])
-def start_message(message: telebot.types.Message) -> None:
+def help_message(message: telebot.types.Message) -> None:
     chat_id = message.chat.id
     bot.send_message(chat_id, HELP)
 
